@@ -1,0 +1,64 @@
+{% extends 'base.html'%}
+{% block title %}
+Home
+{% endblock title %}
+{% block head %}    <link rel="stylesheet" href="../static/styles.css">
+{% endblock head %}
+{% block body %}
+
+<!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="container">
+        <div class="intro">
+            <h2>Hello, I'm Mayuresh</h2>
+            <p class="tagline">Web Developer | Software Engineer</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Write a detailed summary about yourself, including your background, education, skills, and professional experience.</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <!-- Showcase your projects with images, descriptions, and links -->
+        <div class="project">
+            <img src="../static/21.jpg" alt="Project 1">
+            <h3>Django Project</h3>
+            <p>This is project based on django</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+            <img src="../static/22.jpg" alt="Project 1">
+            <h3>React Project</h3>
+            <p>This is a project based on react.js</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <!-- Add more project items as needed -->
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for collaboration or inquiries.</p>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+
+{% endblock body%}
